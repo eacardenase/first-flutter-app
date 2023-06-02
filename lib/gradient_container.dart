@@ -8,6 +8,9 @@ const Alignment endAlignment = Alignment.bottomLeft;
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key, required this.gradientColors});
 
+  GradientContainer.defaultColors({super.key})
+      : gradientColors = [Colors.deepPurple, Colors.cyanAccent];
+
   final List<Color> gradientColors;
 
   @override
