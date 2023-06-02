@@ -6,7 +6,12 @@ void main() {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.cyan, Colors.pink],
+            colors: [
+              Colors.cyan,
+              Colors.pink,
+            ],
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
           ),
         ),
         child: const Center(
