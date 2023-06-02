@@ -6,6 +6,7 @@ void main() {
       body: Center(
         child: Text('Hello from Flutter!'),
       ),
+      backgroundColor: Colors.amberAccent,
     ),
   ));
 }
