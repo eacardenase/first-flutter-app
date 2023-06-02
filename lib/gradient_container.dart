@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'package:first_app/styled_text.dart';
-
 const Alignment startAlignment = Alignment.topRight;
 const Alignment endAlignment = Alignment.bottomLeft;
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key, required this.gradientColors});
-
-  GradientContainer.defaultColors({super.key})
-      : gradientColors = [Colors.deepPurple, Colors.cyanAccent];
 
   final List<Color> gradientColors;
 
@@ -23,8 +18,11 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: StyledText('Hello World from Flutter!'),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-1.png',
+          width: 200,
+        ),
       ),
     );
   }
