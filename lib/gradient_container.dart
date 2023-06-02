@@ -6,17 +6,16 @@ const Alignment startAlignment = Alignment.topRight;
 const Alignment endAlignment = Alignment.bottomLeft;
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  const GradientContainer({super.key, required this.gradientColors});
+
+  final List<Color> gradientColors;
 
   @override
   Widget build(context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            Colors.cyan,
-            Colors.pink,
-          ],
+          colors: gradientColors,
           begin: startAlignment,
           end: endAlignment,
         ),
