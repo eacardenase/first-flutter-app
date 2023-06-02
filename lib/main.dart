@@ -15,7 +15,14 @@ void main() {
           ),
         ),
         child: const Center(
-          child: Text('Hello from Flutter!'),
+          child: Text(
+            'Hello from Flutter!',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     ),
